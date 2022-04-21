@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* seccion header*/
+.first {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+}
+.firstLogo {
+  width: 260px;
+}
+
+.buscar {
+  margin-top: 60px;
+  margin-right: 10px;
+}
+.frase {
+  font-size: 22px;
+  color: rgb(145, 54, 231);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.second {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  background: #e0eafc;
+  background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);
+  background: linear-gradient(to right, #cfdef3, #e0eafc);
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+.menu li a {
+  text-decoration: none;
+}
+.nav__item--oculto {
+  display: none;
+}
+
+.header__abrir {
+  display: none;
+}
+/*fin de header*/
+/*seccion principal realizada con grid*/
+
+.principal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.top {
+  width: 50%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "ele1 ele2"
+    "ele3 ele4";
+  padding: 30px;
+  margin: 30px;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+  gap: 1.5rem;
+}
+.top img {
+  width: 250px;
+  max-height: 250px;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-left: 30px;
+}
+.ele1 {
+  grid-area: ele1;
+}
+.ele2 {
+  grid-area: ele2;
+}
+.ele3 {
+  grid-area: ele3;
+}
+.ele4 {
+  grid-area: ele4;
+}
+
+.titulo1 {
+  position: absolute;
+  top: inicial;
+  left: 70px;
+  margin-top: 10px;
+}
+
+.complementarios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "ele5"
+    "ele6";
+  width: 35%;
+  height: 600px;
+  padding: 10px;
+  margin: 30px;
+  position: relative;
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.masVendidos {
+  width: 70%;
+  height: 250px;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-left: 30px;
+}
+.ele5 {
+  grid-area: ele5;
+}
+.ele6 {
+  grid-area: ele6;
+}
+
+.offers {
+  width: 70%;
+  height: 250px;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.complementarios.titulo2 {
+  position: absolute;
+}
+.offers.titulo3 {
+  position: absolute;
+}
+/*fin bloque principal fragancias top y masvendidos y ofertas realizada con grid*/
+/* bloque localizacion y detalles de contacto*/
+.contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ubicacion {
+  width: 50%;
+  height: 600px;
+  justify-content: space-between;
+  padding: 40px;
+  margin: 40px 20px;
+  background-color: rgb(245, 245, 245);
+  align-items: center;
+}
+
+.detalleContacto {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 245, 245);
+  width: 30%;
+  height: 400px;
+  padding: 40px;
+  margin: 40px 40px;
+  font-size: 20px;
+}
+/*fin de bloque localizacion y detalles de contacto*/
+.piepagina {
+  display: flex;
+  align-items: center;
+}
+.logoPie {
+  width: 260px;
+}
+
+.menuPie .menu2 {
+  list-style-type: none;
+  padding: 20px;
+  gap: 2rem;
+}
+
+.menu2 li a {
+  text-decoration: none;
+}
+
+.pie1 {
+  width: 30%;
+  height: 600px;
+  justify-content: space-between;
+  padding: 40px;
+  margin: 40px 20px;
+  background-color: rgb(245, 245, 245);
+  align-items: center;
+}
+
+.pie2 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 245, 245);
+  width: 60%;
+  height: 400px;
+  padding: 40px;
+  margin: 40px;
+  font-size: 20px;
+}
+/*fin de footer*/
+/*seccion Empresa*/
+h1.title {
+  font-size: 40px;
+  margin: 10px;
+}
+
+article.textoEmpresa {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
+/*fin seccion de Empresa*/
+/*seccion Blog*/
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  max-width: 1200px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.hero__1,
+.hero__2 {
+  width: 100%;
+}
+.hero__2 {
+  display: flex;
+  justify-content: center;
+}
+.hero__2 img {
+  width: 420px;
+}
+.hero__1 .subtitulo {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+.textoBlog {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+/*fin seccion Blog*/
+
+/* media queries */
+
+@media screen and (max-width: 1024px) {
+  .frase {
+    display: none;
+  }
+  .menu {
+    font-size: 18px;
+  }
+  .nav__item--oculto {
+    display: none;
+  }
+  .header__abrir {
+    display: none;
+  }
+
+  .principal {
+    width: 100%;
+  }
+  .top {
+    width: 100%;
+  }
+  .complementarios {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 50vh;
+  }
+  .masVendidos {
+    width: 1fr;
+  }
+  .offers {
+    width: 1fr;
+  }
+  .offers img {
+    object-fit: contain;
+  }
+  .ubicacion {
+    display: none;
+  }
+  .detalleContacto {
+    display: none;
+  }
+
+  .ele5,
+  .ele6 {
+    width: 200px;
+  }
+  .ele6 {
+    height: 150px;
+  }
+  .logoPie img {
+    width: 180px;
+    display: block;
+  }
+  .logosfiPie img {
+    width: 30px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero__1,
+  .hero__2 {
+    width: 100%;
+  }
+  .hero__1 .subtitulo {
+    font-size: 25px;
+    margin: 10px;
+  }
+  .textoBlog {
+    font-size: 20px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .frase {
+    display: none;
+  }
+  .encabezado {
+    width: 100vh;
+    align-content: space-between;
+  }
+  .first {
+    width: 100%;
+  }
+
+  .firstLogo {
+    width: 100px;
+  }
+  .logosfi {
+    align-content: space-around;
+    width: 70%;
+  }
+  .logoinsta {
+    width: 20px;
+  }
+  .logoface {
+    width: 20px;
+  }
+  .buscar {
+    width: 120px;
+    left: 30px;
+    display: none;
+  }
+  /* inicio sidebar */
+  .menu {
+    display: none;
+  }
+  #sidebar:target {
+    display: block;
+  }
+  .header__icono {
+    display: block;
+    font-size: 25px;
+  }
+  .second #sidebar {
+    background-color: rgb(194, 186, 186);
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 30vh;
+    max-width: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav__lista .nav__enlace {
+    font-size: 12px;
+    color: rgb(23, 24, 25);
+  }
+  .nav__item--oculto {
+    display: block;
+  }
+
+  .header__abrir {
+    text-decoration: none;
+    display: block;
+  }
+
+  /* fin sidebar */
+  .principal {
+    width: auto;
+    align-items: center;
+  }
+  .top {
+    width: 100%;
+    height: 1200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "ele1"
+      "ele2"
+      "ele3"
+      "ele4";
+    align-items: flex-start;
+    align-content: center;
+  }
+  .ele1,
+  .ele2,
+  .ele3,
+  .ele4 {
+    width: 100%;
+  }
+
+  .complementarios {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    align-content: center;
+  }
+  .masVendidos {
+    width: 100%;
+  }
+  .offers {
+    width: 100%;
+  }
+  .offers img {
+    object-fit: contain;
+  }
+  .piepagina {
+    width: auto;
+    align-items: center;
+    align-content: center;
+    flex-direction: column-reverse;
+  }
+  .pie1 {
+    width: 100%;
+  }
+  .pie2 {
+    width: 100%;
+  }
+
+  .logoPie img {
+    width: 100%;
+  }
+  .logosfiPie img {
+    width: 20px;
+  }
+  #pieempresa .piepagina {
+    flex-direction: column;
+  }
+
+  #textoempresa {
+    width: 100%;
+  }
+  article.textoEmpresa {
+    font-size: 15px;
+  }
+  h1.title {
+    font-size: 25px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero__1,
+  .hero__2 {
+    width: 100%;
+    margin: 10px;
+  }
+  .hero__1 .subtitulo {
+    font-size: 20px;
+  }
+  .textoBlog {
+    font-size: 15px;
+  }
+  .hero__2 img {
+    width: 200px;
+  }
+}
