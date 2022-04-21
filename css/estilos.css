@@ -76,6 +76,7 @@
   background: #e0eafc;
   background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);
   background: linear-gradient(to right, #cfdef3, #e0eafc);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
 }
 .menu {
   display: flex;
@@ -94,6 +95,10 @@
 .nav__item--oculto {
   display: none;
 }
+.nav__enlace:hover
+ {  
+  color:rgb(27, 12, 236);
+  font-size: 25px;}
 
 .header__abrir {
   display: none;
