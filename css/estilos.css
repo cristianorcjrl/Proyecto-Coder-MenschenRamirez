@@ -155,7 +155,24 @@
   left: 70px;
   margin-top: 10px;
 }
-
+.titulo1:hover,  
+.titulo2:hover ,
+.titulo3:hover  {  
+  text-decoration: none;
+  font-size: 30px;
+  color:rgb(27, 12, 236);
+}
+.titulo1 a,
+.titulo2 a,
+.titulo3 a { /* agregar a git */
+  text-decoration: none;
+ 
+ 
+}
+.titulo1 a:hover, .titulo2 a:hover, .titulo3 a:hover{ /* agregar a git */
+  font-size: 35px;
+  color:rgb(27, 12, 236);
+}
 .complementarios {
   display: grid;
   grid-template-columns: 1fr;
