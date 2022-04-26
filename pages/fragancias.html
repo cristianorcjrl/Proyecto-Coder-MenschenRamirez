@@ -10,8 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- FontAwesome - Iconos -->
   <script src="https://kit.fontawesome.com/94bb95d54f.js" crossorigin="anonymous"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -122,15 +124,15 @@
               src="../images/logoface.png" alt="logo de Facebook" width="50" /></a>
         </div>
       </div>
-      <div class="pie2">
+      <div class="pie2"  >
         <form action="">
           <h3>Contacta con nosotros</h3>
           <label for="nombres"></label>
-          <input type="text" name="nombres" id="nombres" placeholder="nombres" />
+          <input type="text" class="form-control" name="nombres" id="nombres" placeholder="nombres" />
           <label for="email"></label>
-          <input type="email" name="email " id="email" placeholder="correo electronico" /><br /><br />
-          <textarea name="mensaje" id="mensaje" P cols="30" rows="10" placeholder="mensaje">
-                    </textarea><br />
+          <input type="email" class="form-control" name="email " id="email" placeholder="correo electronico" /><br /><br />
+          <textarea name="mensaje" class="form-control" id="mensaje" P cols="30" rows="10" placeholder="mensaje">
+          </textarea><br />
           <input type="submit" value="Enviar mensaje" />
         </form>
       </div>
