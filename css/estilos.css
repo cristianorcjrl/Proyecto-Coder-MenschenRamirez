@@ -151,9 +151,15 @@
 
 .titulo1 {
   position: absolute;
-  top: inicial;
+ 
   left: 70px;
-  margin-top: 10px;
+  margin-top: auto;
+  font-size: 27px;
+  font-family: "Roboto", sans-serif;
+  }
+  .titulo2, .titulo3{
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
   }
 .titulo1:hover,  
 .titulo2:hover ,
@@ -170,7 +176,7 @@
  
 }
 .titulo1 a:hover, .titulo2 a:hover, .titulo3 a:hover{ 
-  font-size: 35px;
+  font-size: 30px;
   color:rgb(27, 12, 236);
 }
 .complementarios {
