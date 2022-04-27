@@ -151,8 +151,7 @@
 
 .titulo1 {
   position: absolute;
- 
-  left: 70px;
+   left: 70px;
   margin-top: auto;
   font-size: 27px;
   font-family: "Roboto", sans-serif;
@@ -160,14 +159,15 @@
   .titulo2, .titulo3{
     font-size: 25px;
     font-family: "Roboto", sans-serif;
+    
   }
-.titulo1:hover,  
+/* .titulo1:hover,  
 .titulo2:hover ,
 .titulo3:hover  {  
   text-decoration: none;
   font-size: 30px;
   color:rgb(27, 12, 236);
-}
+} */
 .titulo1 a,
 .titulo2 a,
 .titulo3 a {
@@ -326,8 +326,9 @@ article.textoEmpresa {
   width: 420px;
 }
 .hero__1 .subtitulo {
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Roboto", sans-serif;
+  color: blue;
 }
 .textoBlog {
   font-size: 25px;
