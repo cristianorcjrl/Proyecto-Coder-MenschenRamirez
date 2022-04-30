@@ -423,7 +423,7 @@ article.textoEmpresa {
     display: none;
   }
   .encabezado {
-    width: 100vh;
+    width: 100;
     align-content: space-between;
   }
   .first {
@@ -435,7 +435,7 @@ article.textoEmpresa {
   }
   .logosfi {
     align-content: space-around;
-    width: 70%;
+    width: 30%;
   }
   .logoinsta {
     width: 20px;
@@ -460,13 +460,13 @@ article.textoEmpresa {
     font-size: 25px;
   }
   .second #sidebar {
-    background-color: rgb(194, 186, 186);
+    background-color: rgb(192, 192, 192);
     position: fixed;
     z-index: 20;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 30vh;
+    width: 85%;
+    height: 70vh;
     max-width: 400px;
     flex-direction: column;
     justify-content: space-around;
@@ -476,7 +476,11 @@ article.textoEmpresa {
 
   .nav__lista .nav__enlace {
     font-size: 12px;
-    color: rgb(23, 24, 25);
+    color: rgb(26, 27, 27);
+  }
+  .nav__lista .nav__enlace:hover {
+    font-size: 14px;
+    color: blue;
   }
   .nav__item--oculto {
     display: block;
@@ -504,6 +508,8 @@ article.textoEmpresa {
       "ele4";
     align-items: flex-start;
     align-content: center;
+    padding: 0;
+    margin: 0;
   }
   .ele1,
   .ele2,
@@ -577,5 +583,10 @@ article.textoEmpresa {
   }
   .hero__2 img {
     width: 200px;
+  }
+  .titulo1,
+  .titulo2,
+  .titulo3{
+    font-size: 18px;
   }
 }
