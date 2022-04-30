@@ -14,7 +14,7 @@
 }
 .firstLogo {
   width: 260px;
-  width: 260px; 
+  width: 260px;
   animation-name: rotar;
   animation-duration: 5s;
   animation-delay: 4s;
@@ -76,7 +76,7 @@
   background: #e0eafc;
   background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);
   background: linear-gradient(to right, #cfdef3, #e0eafc);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 .menu {
   display: flex;
@@ -95,10 +95,10 @@
 .nav__item--oculto {
   display: none;
 }
-.nav__enlace:hover
- {  
-  color:rgb(27, 12, 236);
-  font-size: 25px;}
+.nav__enlace:hover {
+  color: rgb(27, 12, 236);
+  font-size: 25px;
+}
 
 .header__abrir {
   display: none;
@@ -136,7 +136,6 @@
   justify-content: space-evenly;
   padding: 10px;
   margin-left: 30px;
- 
 }
 .ele1 {
   grid-area: ele1;
@@ -153,27 +152,27 @@
 
 .titulo1 {
   position: absolute;
-   left: 70px;
+  left: 70px;
   margin-top: auto;
   font-size: 27px;
   font-family: "Roboto", sans-serif;
-  }
-  .titulo2, .titulo3{
-    font-size: 25px;
-    font-family: "Roboto", sans-serif;
-    
-  }
+}
+.titulo2,
+.titulo3 {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
 
 .titulo1 a,
 .titulo2 a,
 .titulo3 a {
   text-decoration: none;
- 
- 
 }
-.titulo1 a:hover, .titulo2 a:hover, .titulo3 a:hover{ 
+.titulo1 a:hover,
+.titulo2 a:hover,
+.titulo3 a:hover {
   font-size: 30px;
-  color:rgb(27, 12, 236);
+  color: rgb(27, 12, 236);
 }
 .complementarios {
   display: grid;
@@ -191,7 +190,6 @@
   justify-items: center;
   align-items: center;
   background-color: rgb(245, 245, 245);
-  
 }
 
 .masVendidos {
@@ -203,11 +201,9 @@
 }
 .ele5 {
   grid-area: ele5;
- 
 }
 .ele6 {
   grid-area: ele6;
- 
 }
 
 .offers {
@@ -216,9 +212,8 @@
   justify-content: center;
   padding: 10px;
   margin-left: 30px;
-  overflow:hidden;
+  overflow: hidden;
 }
-
 
 .complementarios.titulo2 {
   position: absolute;
@@ -258,12 +253,10 @@
 .piepagina {
   display: flex;
   align-items: center;
-  
 }
 .logoPie {
   width: 260px;
-
-  }
+}
 
 .menuPie .menu2 {
   list-style-type: none;
@@ -372,11 +365,9 @@ article.textoEmpresa {
   }
   .offers {
     width: 1fr;
-    
   }
   .offers img {
     object-fit: contain;
-   
   }
   .ubicacion {
     display: none;
@@ -395,9 +386,8 @@ article.textoEmpresa {
   .logoPie img {
     width: 180px;
     display: block;
-    
   }
- 
+
   .logosfiPie img {
     width: 20px;
   }
@@ -549,7 +539,6 @@ article.textoEmpresa {
 
   .logoPie img {
     width: 150px;
-    
   }
   .logosfiPie img {
     width: 20px;
@@ -586,7 +575,7 @@ article.textoEmpresa {
   }
   .titulo1,
   .titulo2,
-  .titulo3{
+  .titulo3 {
     font-size: 18px;
   }
 }
