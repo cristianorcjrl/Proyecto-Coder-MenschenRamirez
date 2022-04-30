@@ -575,4 +575,9 @@ article.textoEmpresa {
   .hero__2 img {
     width: 200px;
   }
+  .titulo1,
+  .titulo2,
+  .titulo3 {
+    font-size: 18px;
+  }
 }
