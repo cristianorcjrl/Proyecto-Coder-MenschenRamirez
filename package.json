@@ -1,0 +1,26 @@
+{
+  "name": "cls",
+  "version": "1.0.0",
+  "description": "Proyecto pagina acerca de tienda de perfumes Menschen\r pagina de prueba para hacer cambio en el Proyeco master",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/style.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianorcjrl/Proyecto-Coder-MenschenRamirez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristianorcjrl/Proyecto-Coder-MenschenRamirez/issues"
+  },
+  "homepage": "https://github.com/cristianorcjrl/Proyecto-Coder-MenschenRamirez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

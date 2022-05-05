@@ -1,0 +1,27 @@
+.contact {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  .ubicacion {
+    width: 50%;
+    height: 600px;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 40px 20px;
+    background-color: rgb(245, 245, 245);
+    align-items: center;
+  }
+  
+  .detalleContacto {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    width: 30%;
+    height: 400px;
+    padding: 40px;
+    margin: 40px 40px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,434 @@
+.first {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke; }
+  .first .firstLogo {
+    width: 260px;
+    width: 260px;
+    animation-name: rotar;
+    animation-duration: 5s;
+    animation-delay: 4s; }
+
+@keyframes rotar {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }
+  .first .logoface,
+  .first .logoinsta {
+    animation-name: logis;
+    animation-direction: normal;
+    animation-duration: 7s;
+    animation-delay: 0.3s; }
+
+@keyframes logis {
+  from {
+    opacity: 0;
+    transform-style: flat; }
+  to {
+    opacity: 1;
+    transform-style: preserve-3d; } }
+  .first .buscar {
+    margin-top: 60px;
+    margin-right: 10px; }
+  .first .frase {
+    font-size: 22px;
+    color: #9136e7;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold; }
+  .first .animaciones .slogan {
+    animation-name: efecto;
+    animation-duration: 10s;
+    animation-direction: alternate; }
+
+@keyframes efecto {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.second {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  background: #e0eafc;
+  background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);
+  background: linear-gradient(to right, #cfdef3, #e0eafc);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3px; }
+
+.menu li a {
+  text-decoration: none; }
+
+.nav__item--oculto {
+  display: none; }
+
+.nav__enlace:hover {
+  color: #1b0cec;
+  font-size: 25px; }
+
+.header__abrir {
+  display: none; }
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .contact .ubicacion {
+    width: 50%;
+    height: 600px;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 40px 20px;
+    background-color: whitesmoke;
+    align-items: center; }
+  .contact .detalleContacto {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 30%;
+    height: 400px;
+    padding: 40px;
+    margin: 40px 40px;
+    font-size: 20px; }
+
+.piepagina {
+  display: flex;
+  align-items: center; }
+
+.logoPie {
+  width: 260px; }
+
+.menuPie .menu2 {
+  list-style-type: none;
+  padding: 20px;
+  gap: 2rem; }
+
+.menu2 li a {
+  text-decoration: none; }
+
+.pie1 {
+  width: 35%;
+  height: 600px;
+  justify-content: space-between;
+  padding: 40px;
+  margin: 40px 20px;
+  background-color: whitesmoke;
+  align-items: center; }
+
+.pie2 {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 50%;
+  height: 600px;
+  padding: 40px;
+  margin: 40px;
+  font-size: 20px; }
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  max-width: 1200px;
+  flex-direction: column;
+  margin: 0 auto; }
+  .hero .hero__1,
+  .hero .hero__2 {
+    width: 100%; }
+  .hero .hero__2 {
+    display: flex;
+    justify-content: center; }
+  .hero .hero__2 img {
+    width: 420px; }
+  .hero .hero__1 .subtitulo {
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    color: blue; }
+  .hero .textoBlog {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif; }
+
+h1.title {
+  font-size: 40px;
+  margin: 10px; }
+
+article.textoEmpresa {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 10px; }
+
+.principal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 100vh; }
+  .principal .top {
+    width: 50%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ele1 ele2" "ele3 ele4";
+    padding: 30px;
+    margin: 30px;
+    background-color: whitesmoke;
+    position: relative;
+    gap: 1.5rem;
+    overflow: hidden; }
+    .principal .top .top img {
+      width: 250px;
+      max-height: 250px;
+      justify-content: space-evenly;
+      padding: 10px;
+      margin-left: 30px; }
+    .principal .top .ele1 {
+      grid-area: ele1; }
+    .principal .top .ele2 {
+      grid-area: ele2; }
+    .principal .top .ele3 {
+      grid-area: ele3; }
+    .principal .top .ele4 {
+      grid-area: ele4; }
+    .principal .top .titulo1 {
+      position: absolute;
+      left: 70px;
+      margin-top: auto;
+      font-size: 27px;
+      font-family: "Roboto", sans-serif; }
+    .principal .top .titulo1 a {
+      text-decoration: none; }
+    .principal .top .titulo1 a:hover {
+      font-size: 30px;
+      color: #1b0cec; }
+  .principal .complementarios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ele5" "ele6";
+    width: 35%;
+    height: 600px;
+    padding: 10px;
+    margin: 30px;
+    position: relative;
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke; }
+    .principal .complementarios .titulo2,
+    .principal .complementarios .titulo3 {
+      font-size: 25px;
+      font-family: "Roboto", sans-serif; }
+    .principal .complementarios .titulo2 a,
+    .principal .complementarios .titulo3 a {
+      text-decoration: none; }
+    .principal .complementarios .titulo2 a:hover,
+    .principal .complementarios .titulo3 a:hover {
+      font-size: 30px;
+      color: #1b0cec; }
+    .principal .complementarios .masVendidos {
+      width: 70%;
+      height: 250px;
+      justify-content: space-evenly;
+      padding: 10px;
+      margin-left: 30px; }
+    .principal .complementarios .ele5 {
+      grid-area: ele5; }
+    .principal .complementarios .ele6 {
+      grid-area: ele6; }
+    .principal .complementarios .offers {
+      width: 70%;
+      height: 250px;
+      justify-content: center;
+      padding: 10px;
+      margin-left: 30px;
+      overflow: hidden; }
+    .principal .complementarios .complementarios.titulo2 {
+      position: absolute; }
+    .principal .complementarios .offers.titulo3 {
+      position: absolute; }
+
+@media screen and (max-width: 1024px) {
+  .frase {
+    display: none; }
+  .menu {
+    font-size: 18px; }
+  .nav__item--oculto {
+    display: none; }
+  .header__abrir {
+    display: none; }
+  .principal {
+    width: 100%; }
+  .top {
+    width: 100%; }
+  .complementarios {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 50vh; }
+  .masVendidos {
+    width: 1fr; }
+  .offers {
+    width: 1fr; }
+  .offers img {
+    object-fit: contain; }
+  .ubicacion {
+    display: none; }
+  .detalleContacto {
+    display: none; }
+  .ele5,
+  .ele6 {
+    width: 200px; }
+  .ele6 {
+    height: 150px; }
+  .logoPie img {
+    width: 180px;
+    display: block; }
+  .logosfiPie img {
+    width: 20px; }
+  .hero {
+    flex-direction: column; }
+  .hero__1,
+  .hero__2 {
+    width: 100%; }
+  .hero__1 .subtitulo {
+    font-size: 25px;
+    margin: 10px; }
+  .textoBlog {
+    font-size: 20px;
+    margin: 10px; } }
+
+@media screen and (max-width: 600px) {
+  .frase {
+    display: none; }
+  .encabezado {
+    width: 100;
+    align-content: space-between; }
+  .first {
+    width: 100%; }
+  .firstLogo {
+    width: 100px; }
+  .logosfi {
+    align-content: space-around;
+    width: 30%; }
+  .logoinsta {
+    width: 20px; }
+  .logoface {
+    width: 20px; }
+  .buscar {
+    width: 120px;
+    left: 30px;
+    display: none; }
+  .menu {
+    display: none; }
+  #sidebar:target {
+    display: block; }
+  .header__icono {
+    display: block;
+    font-size: 25px; }
+  .second #sidebar {
+    background-color: silver;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 70vh;
+    max-width: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 15px; }
+  .nav__lista .nav__enlace {
+    font-size: 12px;
+    color: #1a1b1b; }
+  .nav__lista .nav__enlace:hover {
+    font-size: 14px;
+    color: blue; }
+  .nav__item--oculto {
+    display: block; }
+  .header__abrir {
+    text-decoration: none;
+    display: block; }
+  .principal {
+    width: auto;
+    align-items: center; }
+  .top {
+    width: 100%;
+    height: 1200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "ele1" "ele2" "ele3" "ele4";
+    align-items: flex-start;
+    align-content: center;
+    padding: 0;
+    margin: 0; }
+  .ele1,
+  .ele2,
+  .ele3,
+  .ele4 {
+    width: 100%; }
+  .complementarios {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    align-content: center; }
+  .masVendidos {
+    width: 100%; }
+  .offers {
+    width: 100%; }
+  .offers img {
+    object-fit: contain; }
+  .piepagina {
+    width: auto;
+    align-items: center;
+    align-content: center;
+    flex-direction: column-reverse; }
+  .pie1 {
+    width: 100%; }
+  .pie2 {
+    width: 100%; }
+  .logoPie img {
+    width: 150px; }
+  .logosfiPie img {
+    width: 20px; }
+  #pieempresa .piepagina {
+    flex-direction: column; }
+  #textoempresa {
+    width: 100%; }
+  article.textoEmpresa {
+    font-size: 15px; }
+  h1.title {
+    font-size: 25px; }
+  .hero {
+    flex-direction: column; }
+  .hero__1,
+  .hero__2 {
+    width: 100%;
+    margin: 10px; }
+  .hero__1 .subtitulo {
+    font-size: 20px; }
+  .textoBlog {
+    font-size: 15px; }
+  .hero__2 img {
+    width: 200px; }
+  .titulo1,
+  .titulo2,
+  .titulo3 {
+    font-size: 18px; } }

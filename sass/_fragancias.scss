@@ -1,0 +1,127 @@
+.principal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  .top {
+    width: 50%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "ele1 ele2"
+      "ele3 ele4";
+    padding: 30px;
+    margin: 30px;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    gap: 1.5rem;
+    overflow: hidden;
+
+    .top img {
+      width: 250px;
+      max-height: 250px;
+      justify-content: space-evenly;
+      padding: 10px;
+      margin-left: 30px;
+    }
+
+    .ele1 {
+      grid-area: ele1;
+    }
+    .ele2 {
+      grid-area: ele2;
+    }
+    .ele3 {
+      grid-area: ele3;
+    }
+    .ele4 {
+      grid-area: ele4;
+    }
+
+    .titulo1 {
+      position: absolute;
+      left: 70px;
+      margin-top: auto;
+      font-size: 27px;
+      font-family: "Roboto", sans-serif;
+    }
+    .titulo1 a {
+      text-decoration: none;
+    }
+    .titulo1 a:hover {
+      font-size: 30px;
+      color: rgb(27, 12, 236);
+    }
+    }
+    
+    
+  
+  .complementarios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "ele5"
+      "ele6";
+    width: 35%;
+    height: 600px;
+    padding: 10px;
+    margin: 30px;
+    position: relative;
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    .titulo2,
+    .titulo3 {
+      font-size: 25px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .titulo2 a,
+    .titulo3 a {
+      text-decoration: none;
+    }
+
+    .titulo2 a:hover,
+    .titulo3 a:hover {
+      font-size: 30px;
+      color: rgb(27, 12, 236);
+     
+    }
+
+  .masVendidos {
+    width: 70%;
+    height: 250px;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-left: 30px;
+  }
+  .ele5 {
+    grid-area: ele5;
+  }
+  .ele6 {
+    grid-area: ele6;
+  }
+
+  .offers {
+    width: 70%;
+    height: 250px;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 30px;
+    overflow: hidden;
+  }
+
+  .complementarios.titulo2 {
+    position: absolute;
+  }
+  .offers.titulo3 {
+    position: absolute;
+  }
+}
+}
