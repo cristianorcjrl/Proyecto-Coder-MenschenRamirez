@@ -1,0 +1,29 @@
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    max-width: 1200px;
+    flex-direction: column;
+    margin: 0 auto;
+  
+  .hero__1,
+  .hero__2 {
+    width: 100%;
+  }
+  .hero__2 {
+    display: flex;
+    justify-content: center;
+  }
+  .hero__2 img {
+    width: 420px;
+  }
+  .hero__1 .subtitulo {
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    color: blue;
+  }
+  .textoBlog {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+}
