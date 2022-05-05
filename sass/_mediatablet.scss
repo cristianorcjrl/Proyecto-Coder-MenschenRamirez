@@ -1,0 +1,81 @@
+.first {
+  .frase {
+    display: none;
+  }
+}
+.second {
+  .header__abrir {
+    display: none;
+  }
+
+  .menu {
+    font-size: 18px;
+  }
+
+  .nav__item--oculto {
+    display: none;
+  }
+}
+
+.principal {
+  width: 100%;
+
+  .top {
+    width: 100%;
+  }
+  .complementarios {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 50vh;
+
+    .masVendidos {
+      width: 1fr;
+
+      .offers {
+        width: 1fr;
+      }
+      .ele5,
+      .ele6 {
+        width: 200px;
+      }
+      .ele6 {
+        height: 150px;
+      }
+    }
+  }
+}
+.contact {
+  .ubicacion {
+    display: none;
+  }
+  .detalleContacto {
+    display: none;
+  }
+}
+
+.piepagina {
+  .logoPie img {
+    width: 180px;
+    display: block;
+  }
+
+  .logosfiPie img {
+    width: 20px;
+  }
+}
+.hero {
+  flex-direction: column;
+}
+.hero__1,
+.hero__2 {
+  width: 100%;
+}
+.hero__1 .subtitulo {
+  font-size: 25px;
+  margin: 10px;
+}
+.textoBlog {
+  font-size: 20px;
+  margin: 10px;
+}
