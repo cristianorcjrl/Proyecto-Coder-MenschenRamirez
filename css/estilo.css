@@ -263,210 +263,175 @@ article.textoEmpresa {
     .principal .complementarios .offers.titulo3 {
       position: absolute; }
 
-.encabezado {
-  width: 100;
-  align-content: space-between; }
-  .encabezado .first {
-    width: 100%; }
-    .encabezado .first .frase {
+@media screen and (max-width: 600px) {
+  .encabezado {
+    width: 100;
+    align-content: space-between; }
+    .encabezado .first {
+      width: 100%; }
+      .encabezado .first .frase {
+        display: none; }
+      .encabezado .first .firstLogo {
+        width: 100px; }
+      .encabezado .first .logosfi {
+        align-content: space-around;
+        width: 30%; }
+        .encabezado .first .logosfi .logoinsta {
+          width: 20px; }
+        .encabezado .first .logosfi .logoface {
+          width: 20px; }
+        .encabezado .first .logosfi .buscar {
+          width: 120px;
+          left: 30px;
+          display: none; }
+    .encabezado .second #sidebar {
+      background-color: silver;
+      position: fixed;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      width: 85%;
+      height: 70vh;
+      max-width: 400px;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 15px; }
+    .encabezado .second .header__abrir {
+      text-decoration: none;
+      display: block; }
+      .encabezado .second .header__abrir .header__icono {
+        display: block;
+        font-size: 25px; }
+    .encabezado .second .menu {
       display: none; }
-    .encabezado .first .firstLogo {
-      width: 40px; }
-    .encabezado .first .logosfi {
-      align-content: space-around;
-      width: 30%; }
-    .encabezado .first .logoinsta {
+      .encabezado .second .menu #sidebar:target {
+        display: block; }
+      .encabezado .second .menu .nav__lista .nav__enlace {
+        font-size: 12px;
+        color: #1a1b1b; }
+      .encabezado .second .menu .nav__lista .nav__enlace:hover {
+        font-size: 14px;
+        color: blue; }
+      .encabezado .second .menu .nav__item--oculto {
+        display: block; }
+  /* fin sidebar */
+  .principal {
+    width: auto;
+    align-items: center;
+    display: grid; }
+    .principal .top {
+      width: 100%;
+      height: 1200px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "ele1" "ele2" "ele3" "ele4";
+      align-items: flex-start;
+      align-content: center;
+      padding: 0;
+      margin: 0; }
+      .principal .top .ele1,
+      .principal .top .ele2,
+      .principal .top .ele3,
+      .principal .top .ele4 {
+        width: auto; }
+    .principal .complementarios {
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "ele5" "ele6";
+      height: auto; }
+      .principal .complementarios .ele5,
+      .principal .complementarios .ele6 {
+        width: auto; }
+      .principal .complementarios .masVendidos {
+        width: auto; }
+      .principal .complementarios .offers {
+        width: auto; }
+      .principal .complementarios .offers img {
+        object-fit: contain; }
+  .piepagina {
+    width: auto;
+    align-items: center;
+    align-content: center;
+    flex-direction: column-reverse; }
+    .piepagina .pie1 {
+      width: 100%; }
+    .piepagina .pie2 {
+      width: 100%; }
+    .piepagina .logoPie img {
+      width: 150px; }
+    .piepagina .logosfiPie img {
       width: 20px; }
-    .encabezado .first .logoface {
-      width: 20px; }
-    .encabezado .first .buscar {
-      width: 120px;
-      left: 30px;
-      display: none; }
-
-.menu {
-  display: none; }
-
-#sidebar:target {
-  display: block; }
-
-.header__icono {
-  display: block;
-  font-size: 25px; }
-
-.second #sidebar {
-  background-color: silver;
-  position: fixed;
-  z-index: 20;
-  top: 0;
-  left: 0;
-  width: 85%;
-  height: 70vh;
-  max-width: 400px;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 15px; }
-
-.nav__lista .nav__enlace {
-  font-size: 12px;
-  color: #1a1b1b; }
-
-.nav__lista .nav__enlace:hover {
-  font-size: 14px;
-  color: blue; }
-
-.nav__item--oculto {
-  display: block; }
-
-.header__abrir {
-  text-decoration: none;
-  display: block; }
-
-.principal {
-  width: auto;
-  align-items: center; }
-
-.top {
-  width: 100%;
-  height: 1200px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "ele1" "ele2" "ele3" "ele4";
-  align-items: flex-start;
-  align-content: center;
-  padding: 0;
-  margin: 0; }
-
-.ele1,
-.ele2,
-.ele3,
-.ele4 {
-  width: 100%; }
-
-.complementarios {
-  width: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 100%;
-  align-content: center; }
-
-.masVendidos {
-  width: 100%; }
-
-.offers {
-  width: 100%; }
-
-.offers img {
-  object-fit: contain; }
-
-.piepagina {
-  width: auto;
-  align-items: center;
-  align-content: center;
-  flex-direction: column-reverse; }
-
-.pie1 {
-  width: 100%; }
-
-.pie2 {
-  width: 100%; }
-
-.logoPie img {
-  width: 150px; }
-
-.logosfiPie img {
-  width: 20px; }
-
-#pieempresa .piepagina {
-  flex-direction: column; }
-
-#textoempresa {
-  width: 100%; }
-
-article.textoEmpresa {
-  font-size: 15px; }
-
-h1.title {
-  font-size: 25px; }
-
-.hero {
-  flex-direction: column; }
-
-.hero__1,
-.hero__2 {
-  width: 100%;
-  margin: 10px; }
-
-.hero__1 .subtitulo {
-  font-size: 20px; }
-
-.textoBlog {
-  font-size: 15px; }
-
-.hero__2 img {
-  width: 200px; }
-
-.titulo1,
-.titulo2,
-.titulo3 {
-  font-size: 18px; }
-
-.first .frase {
-  display: none; }
-
-.second .header__abrir {
-  display: none; }
-
-.second .menu {
-  font-size: 18px; }
-
-.second .nav__item--oculto {
-  display: none; }
-
-.principal {
-  width: 100%; }
-  .principal .top {
+  #pieempresa .piepagina {
+    flex-direction: column; }
+  #textoempresa {
     width: 100%; }
-  .principal .complementarios {
+  article.textoEmpresa {
+    font-size: 15px; }
+  h1.title {
+    font-size: 25px; }
+  .hero {
+    flex-direction: column; }
+  .hero__1,
+  .hero__2 {
     width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 50vh; }
-    .principal .complementarios .masVendidos {
-      width: 1fr; }
-      .principal .complementarios .masVendidos .offers {
+    margin: 10px; }
+  .hero__1 .subtitulo {
+    font-size: 20px; }
+  .textoBlog {
+    font-size: 15px; }
+  .hero__2 img {
+    width: 200px; }
+  .titulo1,
+  .titulo2,
+  .titulo3 {
+    font-size: 18px; } }
+
+@media screen and (max-width: 1024px) {
+  .first .frase {
+    display: none; }
+  .second .header__abrir {
+    display: none; }
+  .second .menu {
+    font-size: 18px; }
+  .second .nav__item--oculto {
+    display: none; }
+  .principal {
+    width: 100%; }
+    .principal .top {
+      width: 100%; }
+    .principal .complementarios {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      height: 50vh; }
+      .principal .complementarios .masVendidos {
         width: 1fr; }
-      .principal .complementarios .masVendidos .ele5,
-      .principal .complementarios .masVendidos .ele6 {
-        width: 200px; }
-      .principal .complementarios .masVendidos .ele6 {
-        height: 150px; }
-
-.contact .ubicacion {
-  display: none; }
-
-.contact .detalleContacto {
-  display: none; }
-
-.piepagina .logoPie img {
-  width: 180px;
-  display: block; }
-
-.piepagina .logosfiPie img {
-  width: 20px; }
-
-.hero {
-  flex-direction: column; }
-
-.hero__1,
-.hero__2 {
-  width: 100%; }
-
-.hero__1 .subtitulo {
-  font-size: 25px;
-  margin: 10px; }
-
-.textoBlog {
-  font-size: 20px;
-  margin: 10px; }
+        .principal .complementarios .masVendidos .offers {
+          width: 1fr; }
+        .principal .complementarios .masVendidos .ele5,
+        .principal .complementarios .masVendidos .ele6 {
+          width: 200px; }
+        .principal .complementarios .masVendidos .ele6 {
+          height: 150px; }
+  .contact .ubicacion {
+    display: none; }
+  .contact .detalleContacto {
+    display: none; }
+  .piepagina .logoPie img {
+    width: 180px;
+    display: block; }
+  .piepagina .logosfiPie img {
+    width: 20px; }
+  .hero {
+    flex-direction: column; }
+  .hero__1,
+  .hero__2 {
+    width: 100%; }
+  .hero__1 .subtitulo {
+    font-size: 25px;
+    margin: 10px; }
+  .textoBlog {
+    font-size: 20px;
+    margin: 10px; } }

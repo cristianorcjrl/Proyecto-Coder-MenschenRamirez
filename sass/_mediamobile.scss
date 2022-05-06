@@ -1,3 +1,4 @@
+@media screen and (max-width: 600px) {
 .encabezado {
   width: 100;
   align-content: space-between;
@@ -13,7 +14,7 @@
    
   
     .firstLogo {
-      width: 40px;
+      width: 100px;
 
     }
     .logosfi {
@@ -33,17 +34,9 @@
     }
   }
   }
-    .menu {
-      display: none;
-    }
-    #sidebar:target {
-      display: block;
-    }
-    .header__icono {
-      display: block;
-      font-size: 25px;
-    }
-    .second #sidebar {
+  .second {
+    #sidebar {
+      
       background-color: rgb(192, 192, 192);
       position: fixed;
       z-index: 20;
@@ -57,6 +50,23 @@
       align-items: flex-start;
       padding: 15px;
     }
+    .header__abrir {
+      text-decoration: none;
+      display: block;
+    
+    .header__icono {
+      display: block;
+      font-size: 25px;
+    }
+  }
+    .menu {
+      display: none;
+    
+    #sidebar:target {
+      display: block;
+    }
+    
+    
   
     .nav__lista .nav__enlace {
       font-size: 12px;
@@ -70,16 +80,17 @@
       display: block;
     }
   
-    .header__abrir {
-      text-decoration: none;
-      display: block;
-    }
-  
+    
+  }
 
+}
+}
+    /* fin sidebar */
     .principal {
       width: auto;
       align-items: center;
-    }
+      display: grid;
+    
     .top {
       width: 100%;
       height: 1200px;
@@ -94,36 +105,46 @@
       align-content: center;
       padding: 0;
       margin: 0;
-    }
+    
     .ele1,
     .ele2,
     .ele3,
     .ele4 {
-      width: 100%;
+      width: auto;
     }
-  
+    }
     .complementarios {
+    
       width: 100%;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
-      height: 100%;
-      align-content: center;
+      grid-template-areas: 
+      "ele5"
+      "ele6";
+      height: auto;
+
+     .ele5,
+    .ele6 {
+      width: auto;
     }
+    
     .masVendidos {
-      width: 100%;
+      width: auto;
     }
     .offers {
-      width: 100%;
+      width: auto;
     }
     .offers img {
       object-fit: contain;
     }
+  }
+}
     .piepagina {
       width: auto;
       align-items: center;
       align-content: center;
       flex-direction: column-reverse;
-    }
+    
     .pie1 {
       width: 100%;
     }
@@ -137,6 +158,7 @@
     .logosfiPie img {
       width: 20px;
     }
+  }
     #pieempresa .piepagina {
       flex-direction: column;
     }
@@ -173,3 +195,5 @@
       font-size: 18px;
     }
   
+  }
+
