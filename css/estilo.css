@@ -256,8 +256,7 @@ article.textoEmpresa {
       height: 250px;
       justify-content: center;
       padding: 10px;
-      margin-left: 30px;
-      overflow: hidden; }
+      margin-left: 30px; }
     .principal .complementarios .complementarios.titulo2 {
       position: absolute; }
     .principal .complementarios .offers.titulo3 {
@@ -314,7 +313,79 @@ article.textoEmpresa {
       font-size: 14px;
       color: blue; }
     .encabezado .second .nav__item--oculto {
-      display: block; } }
+      display: block; }
+  .principal {
+    width: 100%;
+    align-items: center; }
+    .principal .top {
+      width: auto;
+      height: 1200px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "ele1" "ele2" "ele3" "ele4";
+      align-items: flex-start;
+      align-content: center;
+      padding: 0;
+      margin: 0; }
+    .principal .ele1,
+    .principal .ele2,
+    .principal .ele3,
+    .principal .ele4 {
+      width: 65%; }
+    .principal .complementarios {
+      display: grid;
+      width: 100%;
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "ele5" "ele6";
+      align-content: center;
+      margin: 0 auto; }
+      .principal .complementarios .masVendidos .ele5 {
+        width: 65%;
+        padding: 0;
+        margin: 0; }
+      .principal .complementarios .offers .ele6 {
+        width: 65%;
+        margin: 0;
+        padding: 0; }
+  .piepagina {
+    width: auto;
+    align-items: center;
+    align-content: center;
+    flex-direction: column-reverse; }
+    .piepagina .pie1 {
+      width: 100%; }
+    .piepagina .pie2 {
+      width: 100%; }
+    .piepagina .logoPie img {
+      width: 150px; }
+    .piepagina .logosfiPie img {
+      width: 20px; }
+    .piepagina #pieempresa .piepagina {
+      flex-direction: column; }
+    .piepagina #textoempresa {
+      width: 100%; }
+    .piepagina article.textoEmpresa {
+      font-size: 15px; }
+    .piepagina h1.title {
+      font-size: 25px; }
+    .piepagina .hero {
+      flex-direction: column; }
+    .piepagina .hero__1,
+    .piepagina .hero__2 {
+      width: 100%;
+      margin: 10px; }
+    .piepagina .hero__1 .subtitulo {
+      font-size: 20px; }
+    .piepagina .textoBlog {
+      font-size: 15px; }
+    .piepagina .hero__2 img {
+      width: 200px; }
+    .piepagina .titulo1,
+    .piepagina .titulo2,
+    .piepagina .titulo3 {
+      font-size: 18px; } }
 
 @media screen and (max-width: 1024px) {
   .first .frase {
