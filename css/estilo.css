@@ -265,14 +265,14 @@ article.textoEmpresa {
 
 @media screen and (max-width: 600px) {
   .encabezado {
-    width: 100;
+    width: 100%;
     align-content: space-between; }
     .encabezado .first {
       width: 100%; }
       .encabezado .first .frase {
         display: none; }
       .encabezado .first .firstLogo {
-        width: 100px; }
+        width: 130px; }
       .encabezado .first .logosfi {
         align-content: space-around;
         width: 30%; }
@@ -284,6 +284,16 @@ article.textoEmpresa {
           width: 120px;
           left: 30px;
           display: none; }
+    .encabezado .second .header__abrir {
+      text-decoration: none;
+      display: block; }
+    .encabezado .second .menu {
+      display: none; }
+    .encabezado .second #sidebar:target {
+      display: block; }
+    .encabezado .second .header__icono {
+      display: block;
+      font-size: 25px; }
     .encabezado .second #sidebar {
       background-color: silver;
       position: fixed;
@@ -297,96 +307,14 @@ article.textoEmpresa {
       justify-content: space-around;
       align-items: flex-start;
       padding: 15px; }
-    .encabezado .second .header__abrir {
-      text-decoration: none;
-      display: block; }
-      .encabezado .second .header__abrir .header__icono {
-        display: block;
-        font-size: 25px; }
-    .encabezado .second .menu {
-      display: none; }
-      .encabezado .second .menu #sidebar:target {
-        display: block; }
-      .encabezado .second .menu .nav__lista .nav__enlace {
-        font-size: 12px;
-        color: #1a1b1b; }
-      .encabezado .second .menu .nav__lista .nav__enlace:hover {
-        font-size: 14px;
-        color: blue; }
-      .encabezado .second .menu .nav__item--oculto {
-        display: block; }
-  /* fin sidebar */
-  .principal {
-    width: auto;
-    align-items: center;
-    display: grid; }
-    .principal .top {
-      width: 100%;
-      height: 1200px;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "ele1" "ele2" "ele3" "ele4";
-      align-items: flex-start;
-      align-content: center;
-      padding: 0;
-      margin: 0; }
-      .principal .top .ele1,
-      .principal .top .ele2,
-      .principal .top .ele3,
-      .principal .top .ele4 {
-        width: auto; }
-    .principal .complementarios {
-      width: 100%;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "ele5" "ele6";
-      height: auto; }
-      .principal .complementarios .ele5,
-      .principal .complementarios .ele6 {
-        width: auto; }
-      .principal .complementarios .masVendidos {
-        width: auto; }
-      .principal .complementarios .offers {
-        width: auto; }
-      .principal .complementarios .offers img {
-        object-fit: contain; }
-  .piepagina {
-    width: auto;
-    align-items: center;
-    align-content: center;
-    flex-direction: column-reverse; }
-    .piepagina .pie1 {
-      width: 100%; }
-    .piepagina .pie2 {
-      width: 100%; }
-    .piepagina .logoPie img {
-      width: 150px; }
-    .piepagina .logosfiPie img {
-      width: 20px; }
-  #pieempresa .piepagina {
-    flex-direction: column; }
-  #textoempresa {
-    width: 100%; }
-  article.textoEmpresa {
-    font-size: 15px; }
-  h1.title {
-    font-size: 25px; }
-  .hero {
-    flex-direction: column; }
-  .hero__1,
-  .hero__2 {
-    width: 100%;
-    margin: 10px; }
-  .hero__1 .subtitulo {
-    font-size: 20px; }
-  .textoBlog {
-    font-size: 15px; }
-  .hero__2 img {
-    width: 200px; }
-  .titulo1,
-  .titulo2,
-  .titulo3 {
-    font-size: 18px; } }
+    .encabezado .second .nav__lista .nav__enlace {
+      font-size: 12px;
+      color: #1a1b1b; }
+    .encabezado .second .nav__lista .nav__enlace:hover {
+      font-size: 14px;
+      color: blue; }
+    .encabezado .second .nav__item--oculto {
+      display: block; } }
 
 @media screen and (max-width: 1024px) {
   .first .frase {
