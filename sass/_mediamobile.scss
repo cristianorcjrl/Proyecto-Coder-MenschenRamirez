@@ -27,7 +27,6 @@
           left: 30px;
           display: none;
         }
-      
       }
     }
 
@@ -75,12 +74,15 @@
       }
     }
   }
-    .principal {
-      width: 100%;
-      align-items: center;
-    
+  .principal {
+    width: auto;
+    height: 1700px;
+    align-items: center;
+    margin-top: 0 auto;
+
     .top {
-      width: auto;
+      display: grid;
+      width: 260px;
       height: 1200px;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -89,9 +91,9 @@
         "ele2"
         "ele3"
         "ele4";
-      align-items: flex-start;
+      align-items: center;
       align-content: center;
-      padding: 0;
+      padding-top: 0;
       margin: 0;
     }
     .ele1,
@@ -100,46 +102,48 @@
     .ele4 {
       width: 65%;
     }
-  
-    .complementarios {
-      display: grid;
-      width: 100%;
-      height: auto;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
+  }
+
+  .complementarios {
+    height: 800px;
+    width: 100%;
+margin: 0;
+    align-items: center;
+    display: grid;
+    align-content: center;
+
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
       "ele5"
       "ele6";
-      align-content: center;
+    align-items: flex-start;
+
+    .masVendidos {
+      padding: 0 auto;
       margin: 0 auto;
-    
-    .masVendidos .ele5 {
-      width: 65%;
-      padding: 0;
-      margin: 0;
     }
-    .offers .ele6 {
-      width: 65%;
+
+    .offers {
       margin: 0;
       padding: 0;
     }
   }
-}
-    
-   
-    .piepagina {
-      width: auto;
-      align-items: center;
-      align-content: center;
-      flex-direction: column-reverse;
-    
+
+  .piepagina {
+    width: auto;
+    align-items: center;
+    align-content: center;
+    flex-direction: column-reverse;
+
     .pie1 {
       width: 100%;
     }
     .pie2 {
       width: 100%;
     }
-  
+
     .logoPie img {
       width: 150px;
     }
@@ -149,7 +153,7 @@
     #pieempresa .piepagina {
       flex-direction: column;
     }
-  
+
     #textoempresa {
       width: 100%;
     }
@@ -181,6 +185,5 @@
     .titulo3 {
       font-size: 18px;
     }
- 
-}  
+  }
 }

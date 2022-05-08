@@ -315,40 +315,44 @@ article.textoEmpresa {
     .encabezado .second .nav__item--oculto {
       display: block; }
   .principal {
-    width: 100%;
-    align-items: center; }
+    width: auto;
+    height: 1700px;
+    align-items: center;
+    margin-top: 0 auto; }
     .principal .top {
-      width: auto;
+      display: grid;
+      width: 260px;
       height: 1200px;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-areas: "ele1" "ele2" "ele3" "ele4";
-      align-items: flex-start;
+      align-items: center;
       align-content: center;
-      padding: 0;
+      padding-top: 0;
       margin: 0; }
     .principal .ele1,
     .principal .ele2,
     .principal .ele3,
     .principal .ele4 {
       width: 65%; }
-    .principal .complementarios {
-      display: grid;
-      width: 100%;
-      height: auto;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "ele5" "ele6";
-      align-content: center;
+  .complementarios {
+    height: 800px;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    display: grid;
+    align-content: center;
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ele5" "ele6";
+    align-items: flex-start; }
+    .complementarios .masVendidos {
+      padding: 0 auto;
       margin: 0 auto; }
-      .principal .complementarios .masVendidos .ele5 {
-        width: 65%;
-        padding: 0;
-        margin: 0; }
-      .principal .complementarios .offers .ele6 {
-        width: 65%;
-        margin: 0;
-        padding: 0; }
+    .complementarios .offers {
+      margin: 0;
+      padding: 0; }
   .piepagina {
     width: auto;
     align-items: center;
