@@ -330,29 +330,37 @@ article.textoEmpresa {
       align-content: center;
       padding-top: 0;
       margin: 0; }
-    .principal .ele1,
-    .principal .ele2,
-    .principal .ele3,
-    .principal .ele4 {
-      width: 65%; }
-  .complementarios {
-    height: 800px;
-    width: 100%;
-    margin: 0;
-    align-items: center;
-    display: grid;
-    align-content: center;
-    margin-top: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "ele5" "ele6";
-    align-items: flex-start; }
-    .complementarios .masVendidos {
-      padding: 0 auto;
-      margin: 0 auto; }
-    .complementarios .offers {
+      .principal .top .titulo1 {
+        font-size: 18px; }
+      .principal .top .ele1,
+      .principal .top .ele2,
+      .principal .top .ele3,
+      .principal .top .ele4 {
+        width: 65%; }
+    .principal .complementarios {
+      height: 650px;
+      width: auto;
       margin: 0;
-      padding: 0; }
+      align-items: center;
+      display: grid;
+      align-content: center;
+      padding: 0;
+      margin-top: 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "ele5" "ele6";
+      align-items: flex-start; }
+      .principal .complementarios .titulo2,
+      .principal .complementarios .titulo3 {
+        font-size: 18px; }
+      .principal .complementarios .masVendidos {
+        padding: 0;
+        margin-left: 0;
+        width: 250px;
+        display: none; }
+      .principal .complementarios .offers {
+        margin: 0;
+        padding: 0; }
   .piepagina {
     width: auto;
     align-items: center;
@@ -385,11 +393,7 @@ article.textoEmpresa {
     .piepagina .textoBlog {
       font-size: 15px; }
     .piepagina .hero__2 img {
-      width: 200px; }
-    .piepagina .titulo1,
-    .piepagina .titulo2,
-    .piepagina .titulo3 {
-      font-size: 18px; } }
+      width: 200px; } }
 
 @media screen and (max-width: 1024px) {
   .first .frase {
@@ -410,14 +414,13 @@ article.textoEmpresa {
       grid-template-rows: 1fr;
       height: 50vh; }
       .principal .complementarios .masVendidos {
-        width: 1fr; }
+        width: 300px;
+        margin: 0;
+        padding: 0; }
+        .principal .complementarios .masVendidos .ele5 {
+          width: 200px; }
         .principal .complementarios .masVendidos .offers {
           width: 1fr; }
-        .principal .complementarios .masVendidos .ele5,
-        .principal .complementarios .masVendidos .ele6 {
-          width: 200px; }
-        .principal .complementarios .masVendidos .ele6 {
-          height: 150px; }
   .contact .ubicacion {
     display: none; }
   .contact .detalleContacto {

@@ -31,18 +31,20 @@
     height: 50vh;
 
     .masVendidos {
-      width: 1fr;
+      width: 300px;
+      margin: 0;
+      padding: 0;
+     .ele5{
+        width: 200px;
+      }
 
       .offers {
         width: 1fr;
+      
       }
-      .ele5,
-      .ele6 {
-        width: 200px;
-      }
-      .ele6 {
-        height: 150px;
-      }
+    
+  
+      
     }
   }
 }

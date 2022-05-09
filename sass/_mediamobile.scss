@@ -79,6 +79,7 @@
     height: 1700px;
     align-items: center;
     margin-top: 0 auto;
+    
 
     .top {
       display: grid;
@@ -95,6 +96,9 @@
       align-content: center;
       padding-top: 0;
       margin: 0;
+    
+    .titulo1{
+      font-size: 18px;
     }
     .ele1,
     .ele2,
@@ -104,32 +108,44 @@
     }
   }
 
+
   .complementarios {
-    height: 800px;
-    width: 100%;
-margin: 0;
+  
+    height: 650px;
+    width: auto;
+    margin: 0;
     align-items: center;
     display: grid;
     align-content: center;
-
+    padding: 0;
     margin-top: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "ele5"
       "ele6";
     align-items: flex-start;
-
+    .titulo2,
+    .titulo3 {
+      font-size: 18px;
+    }
     .masVendidos {
-      padding: 0 auto;
-      margin: 0 auto;
+      padding: 0;
+      margin-left: 0 ;
+      width: 250px;
+      display: none;
     }
 
     .offers {
       margin: 0;
       padding: 0;
+     
+      
+     
     }
+  
   }
+}
 
   .piepagina {
     width: auto;
@@ -180,10 +196,8 @@ margin: 0;
     .hero__2 img {
       width: 200px;
     }
-    .titulo1,
-    .titulo2,
-    .titulo3 {
-      font-size: 18px;
-    }
+   
+   
   }
-}
+
+  }
