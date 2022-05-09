@@ -256,50 +256,179 @@ article.textoEmpresa {
       height: 250px;
       justify-content: center;
       padding: 10px;
-      margin-left: 30px;
-      overflow: hidden; }
+      margin-left: 30px; }
     .principal .complementarios .complementarios.titulo2 {
       position: absolute; }
     .principal .complementarios .offers.titulo3 {
       position: absolute; }
 
+@media screen and (max-width: 600px) {
+  .encabezado {
+    width: 100%;
+    align-content: space-between; }
+    .encabezado .first {
+      width: 100%; }
+      .encabezado .first .frase {
+        display: none; }
+      .encabezado .first .firstLogo {
+        width: 130px; }
+      .encabezado .first .logosfi {
+        align-content: space-around;
+        width: 30%; }
+        .encabezado .first .logosfi .logoinsta {
+          width: 20px; }
+        .encabezado .first .logosfi .logoface {
+          width: 20px; }
+        .encabezado .first .logosfi .buscar {
+          width: 120px;
+          left: 30px;
+          display: none; }
+    .encabezado .second .header__abrir {
+      text-decoration: none;
+      display: block; }
+    .encabezado .second .menu {
+      display: none; }
+    .encabezado .second #sidebar:target {
+      display: block; }
+    .encabezado .second .header__icono {
+      display: block;
+      font-size: 25px; }
+    .encabezado .second #sidebar {
+      background-color: silver;
+      position: fixed;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      width: 85%;
+      height: 70vh;
+      max-width: 400px;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 15px; }
+    .encabezado .second .nav__lista .nav__enlace {
+      font-size: 12px;
+      color: #1a1b1b; }
+    .encabezado .second .nav__lista .nav__enlace:hover {
+      font-size: 14px;
+      color: blue; }
+    .encabezado .second .nav__item--oculto {
+      display: block; }
+  .principal {
+    width: auto;
+    height: 1700px;
+    align-items: center;
+    margin-top: 0 auto; }
+    .principal .top {
+      display: grid;
+      width: 260px;
+      height: 1200px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "ele1" "ele2" "ele3" "ele4";
+      align-items: center;
+      align-content: center;
+      padding-top: 0;
+      margin: 0; }
+      .principal .top .titulo1 {
+        font-size: 18px; }
+      .principal .top .ele1,
+      .principal .top .ele2,
+      .principal .top .ele3,
+      .principal .top .ele4 {
+        width: 65%; }
+    .principal .complementarios {
+      height: 650px;
+      width: auto;
+      margin: 0;
+      align-items: center;
+      display: grid;
+      align-content: center;
+      padding: 0;
+      margin-top: 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "ele5" "ele6";
+      align-items: flex-start; }
+      .principal .complementarios .titulo2,
+      .principal .complementarios .titulo3 {
+        font-size: 18px; }
+      .principal .complementarios .masVendidos {
+        padding: 0;
+        margin-left: 0;
+        width: 250px;
+        display: none; }
+      .principal .complementarios .offers {
+        margin: 0;
+        padding: 0; }
+  .piepagina {
+    width: auto;
+    align-items: center;
+    align-content: center;
+    flex-direction: column-reverse; }
+    .piepagina .pie1 {
+      width: 100%; }
+    .piepagina .pie2 {
+      width: 100%; }
+    .piepagina .logoPie img {
+      width: 150px; }
+    .piepagina .logosfiPie img {
+      width: 20px; }
+    .piepagina #pieempresa .piepagina {
+      flex-direction: column; }
+    .piepagina #textoempresa {
+      width: 100%; }
+    .piepagina article.textoEmpresa {
+      font-size: 15px; }
+    .piepagina h1.title {
+      font-size: 25px; }
+    .piepagina .hero {
+      flex-direction: column; }
+    .piepagina .hero__1,
+    .piepagina .hero__2 {
+      width: 100%;
+      margin: 10px; }
+    .piepagina .hero__1 .subtitulo {
+      font-size: 20px; }
+    .piepagina .textoBlog {
+      font-size: 15px; }
+    .piepagina .hero__2 img {
+      width: 200px; } }
+
 @media screen and (max-width: 1024px) {
-  .frase {
+  .first .frase {
     display: none; }
-  .menu {
+  .second .header__abrir {
+    display: none; }
+  .second .menu {
     font-size: 18px; }
-  .nav__item--oculto {
-    display: none; }
-  .header__abrir {
+  .second .nav__item--oculto {
     display: none; }
   .principal {
     width: 100%; }
-  .top {
-    width: 100%; }
-  .complementarios {
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 50vh; }
-  .masVendidos {
-    width: 1fr; }
-  .offers {
-    width: 1fr; }
-  .offers img {
-    object-fit: contain; }
-  .ubicacion {
+    .principal .top {
+      width: 100%; }
+    .principal .complementarios {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      height: 50vh; }
+      .principal .complementarios .masVendidos {
+        width: 300px;
+        margin: 0;
+        padding: 0; }
+        .principal .complementarios .masVendidos .ele5 {
+          width: 200px; }
+        .principal .complementarios .masVendidos .offers {
+          width: 1fr; }
+  .contact .ubicacion {
     display: none; }
-  .detalleContacto {
+  .contact .detalleContacto {
     display: none; }
-  .ele5,
-  .ele6 {
-    width: 200px; }
-  .ele6 {
-    height: 150px; }
-  .logoPie img {
+  .piepagina .logoPie img {
     width: 180px;
     display: block; }
-  .logosfiPie img {
+  .piepagina .logosfiPie img {
     width: 20px; }
   .hero {
     flex-direction: column; }
@@ -312,123 +441,3 @@ article.textoEmpresa {
   .textoBlog {
     font-size: 20px;
     margin: 10px; } }
-
-@media screen and (max-width: 600px) {
-  .frase {
-    display: none; }
-  .encabezado {
-    width: 100;
-    align-content: space-between; }
-  .first {
-    width: 100%; }
-  .firstLogo {
-    width: 100px; }
-  .logosfi {
-    align-content: space-around;
-    width: 30%; }
-  .logoinsta {
-    width: 20px; }
-  .logoface {
-    width: 20px; }
-  .buscar {
-    width: 120px;
-    left: 30px;
-    display: none; }
-  .menu {
-    display: none; }
-  #sidebar:target {
-    display: block; }
-  .header__icono {
-    display: block;
-    font-size: 25px; }
-  .second #sidebar {
-    background-color: silver;
-    position: fixed;
-    z-index: 20;
-    top: 0;
-    left: 0;
-    width: 85%;
-    height: 70vh;
-    max-width: 400px;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 15px; }
-  .nav__lista .nav__enlace {
-    font-size: 12px;
-    color: #1a1b1b; }
-  .nav__lista .nav__enlace:hover {
-    font-size: 14px;
-    color: blue; }
-  .nav__item--oculto {
-    display: block; }
-  .header__abrir {
-    text-decoration: none;
-    display: block; }
-  .principal {
-    width: auto;
-    align-items: center; }
-  .top {
-    width: 100%;
-    height: 1200px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "ele1" "ele2" "ele3" "ele4";
-    align-items: flex-start;
-    align-content: center;
-    padding: 0;
-    margin: 0; }
-  .ele1,
-  .ele2,
-  .ele3,
-  .ele4 {
-    width: 100%; }
-  .complementarios {
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 100%;
-    align-content: center; }
-  .masVendidos {
-    width: 100%; }
-  .offers {
-    width: 100%; }
-  .offers img {
-    object-fit: contain; }
-  .piepagina {
-    width: auto;
-    align-items: center;
-    align-content: center;
-    flex-direction: column-reverse; }
-  .pie1 {
-    width: 100%; }
-  .pie2 {
-    width: 100%; }
-  .logoPie img {
-    width: 150px; }
-  .logosfiPie img {
-    width: 20px; }
-  #pieempresa .piepagina {
-    flex-direction: column; }
-  #textoempresa {
-    width: 100%; }
-  article.textoEmpresa {
-    font-size: 15px; }
-  h1.title {
-    font-size: 25px; }
-  .hero {
-    flex-direction: column; }
-  .hero__1,
-  .hero__2 {
-    width: 100%;
-    margin: 10px; }
-  .hero__1 .subtitulo {
-    font-size: 20px; }
-  .textoBlog {
-    font-size: 15px; }
-  .hero__2 img {
-    width: 200px; }
-  .titulo1,
-  .titulo2,
-  .titulo3 {
-    font-size: 18px; } }

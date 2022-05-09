@@ -1,0 +1,203 @@
+@media screen and (max-width: 600px) {
+  .encabezado {
+    width: 100%;
+    align-content: space-between;
+
+    .first {
+      width: 100%;
+
+      .frase {
+        display: none;
+      }
+
+      .firstLogo {
+        width: 130px;
+      }
+      .logosfi {
+        align-content: space-around;
+        width: 30%;
+        .logoinsta {
+          width: 20px;
+        }
+        .logoface {
+          width: 20px;
+        }
+        .buscar {
+          width: 120px;
+          left: 30px;
+          display: none;
+        }
+      }
+    }
+
+    .second {
+      .header__abrir {
+        text-decoration: none;
+        display: block;
+      }
+
+      .menu {
+        display: none;
+      }
+      #sidebar:target {
+        display: block;
+      }
+      .header__icono {
+        display: block;
+        font-size: 25px;
+      }
+      #sidebar {
+        background-color: rgb(192, 192, 192);
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        width: 85%;
+        height: 70vh;
+        max-width: 400px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 15px;
+      }
+
+      .nav__lista .nav__enlace {
+        font-size: 12px;
+        color: rgb(26, 27, 27);
+      }
+      .nav__lista .nav__enlace:hover {
+        font-size: 14px;
+        color: blue;
+      }
+      .nav__item--oculto {
+        display: block;
+      }
+    }
+  }
+  .principal {
+    width: auto;
+    height: 1700px;
+    align-items: center;
+    margin-top: 0 auto;
+    
+
+    .top {
+      display: grid;
+      width: 260px;
+      height: 1200px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "ele1"
+        "ele2"
+        "ele3"
+        "ele4";
+      align-items: center;
+      align-content: center;
+      padding-top: 0;
+      margin: 0;
+    
+    .titulo1{
+      font-size: 18px;
+    }
+    .ele1,
+    .ele2,
+    .ele3,
+    .ele4 {
+      width: 65%;
+    }
+  }
+
+
+  .complementarios {
+  
+    height: 650px;
+    width: auto;
+    margin: 0;
+    align-items: center;
+    display: grid;
+    align-content: center;
+    padding: 0;
+    margin-top: 0;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "ele5"
+      "ele6";
+    align-items: flex-start;
+    .titulo2,
+    .titulo3 {
+      font-size: 18px;
+    }
+    .masVendidos {
+      padding: 0;
+      margin-left: 0 ;
+      width: 250px;
+      display: none;
+    }
+
+    .offers {
+      margin: 0;
+      padding: 0;
+     
+      
+     
+    }
+  
+  }
+}
+
+  .piepagina {
+    width: auto;
+    align-items: center;
+    align-content: center;
+    flex-direction: column-reverse;
+
+    .pie1 {
+      width: 100%;
+    }
+    .pie2 {
+      width: 100%;
+    }
+
+    .logoPie img {
+      width: 150px;
+    }
+    .logosfiPie img {
+      width: 20px;
+    }
+    #pieempresa .piepagina {
+      flex-direction: column;
+    }
+
+    #textoempresa {
+      width: 100%;
+    }
+    article.textoEmpresa {
+      font-size: 15px;
+    }
+    h1.title {
+      font-size: 25px;
+    }
+    .hero {
+      flex-direction: column;
+    }
+    .hero__1,
+    .hero__2 {
+      width: 100%;
+      margin: 10px;
+    }
+    .hero__1 .subtitulo {
+      font-size: 20px;
+    }
+    .textoBlog {
+      font-size: 15px;
+    }
+    .hero__2 img {
+      width: 200px;
+    }
+   
+   
+  }
+
+  }
