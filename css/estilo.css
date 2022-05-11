@@ -155,10 +155,6 @@
     justify-content: center; }
   .hero .hero__2 img {
     width: 420px; }
-  .hero .hero__1 .subtitulo {
-    font-size: 35px;
-    font-family: "Roboto", sans-serif;
-    color: blue; }
   .hero .textoBlog {
     font-size: 20px;
     font-family: "Roboto", sans-serif; }
@@ -208,13 +204,12 @@ article.textoEmpresa {
     .principal .top .titulo1 {
       position: absolute;
       left: 70px;
-      margin-top: auto;
-      font-size: 27px;
-      font-family: "Roboto", sans-serif; }
+      margin-top: auto; }
     .principal .top .titulo1 a {
       text-decoration: none; }
     .principal .top .titulo1 a:hover {
-      font-size: 30px;
+      font-size: 35px;
+      font-family: "Roboto", sans-serif;
       color: #1b0cec; }
   .principal .complementarios {
     display: grid;
@@ -230,16 +225,12 @@ article.textoEmpresa {
     justify-items: center;
     align-items: center;
     background-color: whitesmoke; }
-    .principal .complementarios .titulo2,
-    .principal .complementarios .titulo3 {
-      font-size: 25px;
-      font-family: "Roboto", sans-serif; }
     .principal .complementarios .titulo2 a,
     .principal .complementarios .titulo3 a {
       text-decoration: none; }
     .principal .complementarios .titulo2 a:hover,
     .principal .complementarios .titulo3 a:hover {
-      font-size: 30px;
+      font-size: 35px;
       color: #1b0cec; }
     .principal .complementarios .masVendidos {
       width: 70%;
@@ -441,3 +432,8 @@ article.textoEmpresa {
   .textoBlog {
     font-size: 20px;
     margin: 10px; } }
+
+.titleTemplate, .hero .hero__1 .subtitulo, .principal .top .titulo1, .principal .complementarios .titulo2,
+.principal .complementarios .titulo3 {
+  font-size: 30px;
+  color: #2c58c9; }

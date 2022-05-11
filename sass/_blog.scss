@@ -18,9 +18,7 @@
     width: 420px;
   }
   .hero__1 .subtitulo {
-    font-size: 35px;
-    font-family: "Roboto", sans-serif;
-    color: blue;
+    @extend .titleTemplate;
   }
   .textoBlog {
     font-size: 20px;
