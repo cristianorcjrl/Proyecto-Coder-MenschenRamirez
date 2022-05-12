@@ -16,7 +16,7 @@
       "ele3 ele4";
     padding: 30px;
     margin: 30px;
-    background-color: rgb(245, 245, 245);
+    background-color: $bgColor;
     position: relative;
     gap: 1.5rem;
     overflow: hidden;
@@ -46,14 +46,14 @@
       position: absolute;
       left: 70px;
       margin-top: auto;
-      font-size: 27px;
-      font-family: "Roboto", sans-serif;
+     @extend .titleTemplate;
     }
     .titulo1 a {
       text-decoration: none;
     }
     .titulo1 a:hover {
-      font-size: 30px;
+      font-size: 35px;
+      font-family: "Roboto", sans-serif;
       color: rgb(27, 12, 236);
     }
     }
@@ -75,11 +75,10 @@
     gap: 1.5rem;
     justify-items: center;
     align-items: center;
-    background-color: rgb(245, 245, 245);
+    background-color: $bgColor;
     .titulo2,
     .titulo3 {
-      font-size: 25px;
-      font-family: "Roboto", sans-serif;
+      @extend .titleTemplate;
     }
 
     .titulo2 a,
@@ -89,7 +88,7 @@
 
     .titulo2 a:hover,
     .titulo3 a:hover {
-      font-size: 30px;
+      font-size: 35px;
       color: rgb(27, 12, 236);
      
     }

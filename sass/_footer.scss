@@ -22,14 +22,14 @@
     justify-content: space-between;
     padding: 40px;
     margin: 40px 20px;
-    background-color: rgb(245, 245, 245);
+    background-color: $bgColor;
     align-items: center;
   }
   
   .pie2 {
     display: flex;
     flex-direction: column;
-    background-color: rgb(245, 245, 245);
+    background-color: $bgColor;
     width: 50%;
     height: 600px;
     padding: 40px;
