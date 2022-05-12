@@ -155,18 +155,23 @@
     justify-content: center; }
   .hero .hero__2 img {
     width: 420px; }
+  .hero .hero__1 .subtitulo {
+    margin: 10px; }
   .hero .textoBlog {
     font-size: 20px;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+    justify-content: center; }
 
 h1.title {
   font-size: 40px;
   margin: 10px; }
 
 article.textoEmpresa {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
-  margin: 10px; }
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+  justify-content: center; }
 
 .principal {
   display: flex;
@@ -235,7 +240,7 @@ article.textoEmpresa {
     .principal .complementarios .masVendidos {
       width: 70%;
       height: 250px;
-      justify-content: space-evenly;
+      justify-content: center;
       padding: 10px;
       margin-left: 30px; }
     .principal .complementarios .ele5 {
