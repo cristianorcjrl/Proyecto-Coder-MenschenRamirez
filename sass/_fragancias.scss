@@ -53,7 +53,7 @@
       position: absolute;
       left: 70px;
       margin-top: auto;
-     @extend .titleTemplate;
+      @extend .titleTemplate;
     }
     .titulo1 a {
       text-decoration: none;
@@ -63,10 +63,8 @@
       font-family: "Roboto", sans-serif;
       color: rgb(27, 12, 236);
     }
-    }
-    
-    
-  
+  }
+
   .complementarios {
     display: grid;
     grid-template-columns: 1fr;
@@ -97,29 +95,27 @@
     .titulo3 a:hover {
       font-size: 35px;
       color: rgb(27, 12, 236);
-     
     }
 
-  .masVendidos {
-   @include cardContainer(center);
-  }
-  .ele5 {
-    grid-area: ele5;
-  }
-  .ele6 {
-    grid-area: ele6;
-  }
+    .masVendidos {
+      @include cardContainer(center);
+    }
+    .ele5 {
+      grid-area: ele5;
+    }
+    .ele6 {
+      grid-area: ele6;
+    }
 
-  .offers {
-    @include cardContainer(center);
-    
-  }
+    .offers {
+      @include cardContainer(center);
+    }
 
-  .complementarios.titulo2 {
-    position: absolute;
+    .complementarios.titulo2 {
+      position: absolute;
+    }
+    .offers.titulo3 {
+      position: absolute;
+    }
   }
-  .offers.titulo3 {
-    position: absolute;
-  }
-}
 }

@@ -1,85 +1,81 @@
 @media screen and (max-width: 1024px) {
-.first {
-  .frase {
-    display: none;
-  }
-}
-.second {
-  .header__abrir {
-    display: none;
-  }
-
-  .menu {
-    font-size: 18px;
-  }
-
-  .nav__item--oculto {
-    display: none;
-  }
-}
-
-.principal {
-  width: 100%;
-
-  .top {
-    width: 100%;
-  }
-  .complementarios {
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 50vh;
-
-    .masVendidos {
-      width: 300px;
-      margin: 0;
-      padding: 0;
-     .ele5{
-        width: 200px;
-      }
-
-      .offers {
-        width: 1fr;
-      
-      }
-    
-  
-      
+  .first {
+    .frase {
+      display: none;
     }
   }
-}
-.contact {
-  .ubicacion {
-    display: none;
-  }
-  .detalleContacto {
-    display: none;
-  }
-}
+  .second {
+    .header__abrir {
+      display: none;
+    }
 
-.piepagina {
-  .logoPie img {
-    width: 180px;
-    display: block;
+    .menu {
+      font-size: 18px;
+    }
+
+    .nav__item--oculto {
+      display: none;
+    }
   }
 
-  .logosfiPie img {
-    width: 20px;
+  .principal {
+    width: 100%;
+
+    .top {
+      width: 100%;
+    }
+    .complementarios {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      height: 50vh;
+
+      .masVendidos {
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        .ele5 {
+          width: 200px;
+        }
+
+        .offers {
+          width: 1fr;
+        }
+      }
+    }
   }
-}
-.hero {
-  flex-direction: column;
-}
-.hero__1,
-.hero__2 {
-  width: 100%;
-}
-.hero__1 .subtitulo {
-  font-size: 25px;
-  margin: 10px;
-}
-.textoBlog {
-  font-size: 20px;
-  margin: 10px;
-}
+  .contact {
+    .ubicacion {
+      display: none;
+    }
+    .detalleContacto {
+      display: none;
+    }
+  }
+
+  .piepagina {
+    .logoPie img {
+      width: 180px;
+      display: block;
+    }
+
+    .logosfiPie img {
+      width: 20px;
+    }
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero__1,
+  .hero__2 {
+    width: 100%;
+  }
+  .hero__1 .subtitulo {
+    font-size: 25px;
+    margin: 10px;
+  }
+  .textoBlog {
+    font-size: 20px;
+    margin: 10px;
+  }
 }
