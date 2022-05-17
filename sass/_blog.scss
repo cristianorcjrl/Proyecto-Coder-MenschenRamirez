@@ -1,11 +1,11 @@
 .hero {
-    display: flex;
-    align-items: center;
-    min-height: 600px;
-    max-width: 1200px;
-    flex-direction: column;
-    margin: 0 auto;
-  
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  max-width: 1200px;
+  flex-direction: column;
+  margin: 0 auto;
+
   .hero__1,
   .hero__2 {
     width: 100%;
@@ -23,8 +23,8 @@
   }
   .textoBlog {
     font-size: 20px;
-    font-family:  "Roboto", sans-serif ;
+    font-family: "Roboto", sans-serif;
     margin: 10px;
-    justify-content: center;  
-}
+    justify-content: center;
   }
+}

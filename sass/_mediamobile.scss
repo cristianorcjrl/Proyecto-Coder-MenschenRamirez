@@ -79,7 +79,6 @@
     height: 1700px;
     align-items: center;
     margin-top: 0 auto;
-    
 
     .top {
       display: grid;
@@ -96,56 +95,50 @@
       align-content: center;
       padding-top: 0;
       margin: 0;
-    
-    .titulo1{
-      font-size: 18px;
-    }
-    .ele1,
-    .ele2,
-    .ele3,
-    .ele4 {
-      width: 65%;
-    }
-  }
 
-
-  .complementarios {
-  
-    height: 650px;
-    width: auto;
-    margin: 0;
-    align-items: center;
-    display: grid;
-    align-content: center;
-    padding: 0;
-    margin-top: 0;
-     grid-template-columns: 1fr;
-     grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "ele5"
-      "ele6";
-    align-items: flex-start;
-    .titulo2,
-    .titulo3 {
-      font-size: 18px;
-    }
-    .masVendidos {
-      padding: 0;
-      margin-left: 0 ;
-      width: 250px;
-      display: none;
+      .titulo1 {
+        font-size: 18px;
+      }
+      .ele1,
+      .ele2,
+      .ele3,
+      .ele4 {
+        width: 65%;
+      }
     }
 
-    .offers {
+    .complementarios {
+      height: 650px;
+      width: auto;
       margin: 0;
+      align-items: center;
+      display: grid;
+      align-content: center;
       padding: 0;
-     
-      
-     
+      margin-top: 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "ele5"
+        "ele6";
+      align-items: flex-start;
+      .titulo2,
+      .titulo3 {
+        font-size: 18px;
+      }
+      .masVendidos {
+        padding: 0;
+        margin-left: 0;
+        width: 250px;
+        display: none;
+      }
+
+      .offers {
+        margin: 0;
+        padding: 0;
+      }
     }
-  
   }
-}
 
   .piepagina {
     width: auto;
@@ -196,8 +189,5 @@
     .hero__2 img {
       width: 200px;
     }
-   
-   
   }
-
-  }
+}
