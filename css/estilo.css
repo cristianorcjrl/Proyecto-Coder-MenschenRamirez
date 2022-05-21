@@ -186,7 +186,7 @@ article.textoEmpresa {
   min-height: 100vh; }
   .principal .top {
     width: 50%;
-    height: 600px;
+    height: 700px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -211,6 +211,9 @@ article.textoEmpresa {
       grid-area: ele3; }
     .principal .top .ele4 {
       grid-area: ele4; }
+    .principal .top img:hover {
+      zoom: 110%;
+      filter: opacity(0.5); }
     .principal .top .titulo1 {
       position: absolute;
       left: 70px;
@@ -227,7 +230,7 @@ article.textoEmpresa {
     grid-template-rows: 50% 50%;
     grid-template-areas: "ele5" "ele6";
     width: 35%;
-    height: 600px;
+    height: 700px;
     padding: 10px;
     margin: 30px;
     position: relative;
@@ -251,7 +254,11 @@ article.textoEmpresa {
     .principal .complementarios .ele5 {
       grid-area: ele5; }
     .principal .complementarios .ele6 {
-      grid-area: ele6; }
+      grid-area: ele6;
+      width: 150px; }
+    .principal .complementarios img:hover {
+      zoom: 110%;
+      filter: opacity(0.5); }
     .principal .complementarios .offers {
       width: 70%;
       height: 250px;
